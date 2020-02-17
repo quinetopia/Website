@@ -1,10 +1,4 @@
-Body {/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffa84c+0,ff7b0d+83 */
-    /*background: #ffa84c; /* Old browsers */
-    /*background: -moz-linear-gradient(-45deg,  #ffa84c 0%, #ff7b0d 83%); /* FF3.6-15 */
-    /*background: -webkit-linear-gradient(-45deg,  #ffa84c 0%,#ff7b0d 83%); /* Chrome10-25,Safari5.1-6 */
-    /*background: linear-gradient(135deg,  #ffa84c 0%,#ff7b0d 83%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    /* end of background color  - old colour number = ff7b0d*/
+Body {
     background: #ff7b0d;
     font-family: 'Muli', sans-serif;
     color: whitesmoke;
@@ -15,17 +9,27 @@ Body {/* Permalink - use to edit and share this gradient: https://colorzilla.com
     color: rgb(13, 54, 92);
     font-weight: bold;
 }
+#breadcrumbs{
+    font-family: 'Muli', sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: normal;
+    font-size: small;
+}
+
 a[href] {
     font-family: 'Muli', sans-serif;
     text-decoration: none;
     color: rgb(13, 54, 92);
     font-weight: bold;
 }
+
 .spacer {
     display: flex;
     flex-direction: column;
     height: 200px;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -33,6 +37,7 @@ a[href] {
     align-content: stretch;
     height: 100%;
 }
+
 /*Home page name*/
 .name{
     display: flex;
@@ -43,15 +48,11 @@ a[href] {
     font-size: 40pt;
     font-stretch: semi-expanded;
 }
+/* end home page layout*/
 
-/*placeholder*/
-#placeholder {
-    position: relative;
-    top: 10px;
-}
 /*buttons*/
 .button {
-    background-color: rgb(13, 54, 92); /* Green */
+    background-color: rgb(13, 54, 92); 
     border: none;
     border-radius: 8px;
     color: whitesmoke;
@@ -62,12 +63,103 @@ a[href] {
     font-size: 14px;
   }
 
+/*resume page layout*/
 .resumebuttoncontainer {
     margin-top: 10px;
     position: relative;
     left: 70%;
 }
-/*Photo layout*/
+/* end resume layout*/
+
+/*meme game layout*/
+.submitButton{
+    position: absolute;
+    right: 15%;
+    text-align: center;
+}
+#memeSubmit{
+    position: relative;
+    /*right: 14%;*/
+    display: inline-block;
+    background-color: cadetblue;
+    color: rgb(13, 54, 92);
+    width: 150px;
+    font-family: 'Muli', sans-serif;
+    font-size: medium;
+}
+#memeFormContainer{
+    position: relative;
+    margin-top: 10px;
+}
+label{
+    display: inline-block;
+    text-align: right;
+    width: 25%;
+    height: 45px;
+}
+input{
+    display: inline-block;
+    left: 0px;
+    text-align: left;
+    width: 60%;
+}
+
+#memeSpace {
+    margin-top: 40px;
+    position: relative;
+}
+.memeContainer {
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    background: url(/images/delete.png) no-repeat;
+    font-weight: bold;
+    color: black;
+    opacity: 1;
+    transition: 0.3s;
+}
+.memeImage:hover {
+    opacity: .3;
+}
+.memeImage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 200px;
+    width: 200px;
+    z-index: 2;
+}
+.topText{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+}
+.bottomText{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 4;
+}
+.deleteImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    vertical-align: 50%;
+    width: 200px;
+    height: 200px;
+    z-index: 0;
+}
+/*end meme game layout*/
+
+/*photo page layout*/
 .photo-grid-container {
     display: flex;
     justify-content: center;
@@ -78,7 +170,7 @@ a[href] {
     top: 10px;
     width: 900px;
     display: flex;
-    justify-content: center;    /* Change this */
+    justify-content: center;    /* Change this*/ 
     flex-wrap: wrap;
   }  
   
@@ -87,5 +179,4 @@ a[href] {
     width: 400px;
     height: 400px;
   }
-  
   /*end photo layout*/
