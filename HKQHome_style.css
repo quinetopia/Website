@@ -71,7 +71,29 @@ a[href] {
 }
 /* end resume layout*/
 
-/*meme game layout*/
+/*game page layout*/
+.gameGridContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gameGrid {
+    position: relative;
+    top: 10px;
+    width: 900px;
+    display: flex;
+    justify-content: center;  
+    flex-wrap: wrap;
+  }  
+  
+  .gameGridItem {
+    border: 1px solid #fff;
+    width: 200px;
+    height: 200px;
+  }
+  /*end game page layout*/
+  
+  /*meme game layout*/
 .submitButton{
     position: absolute;
     right: 15%;
@@ -160,21 +182,21 @@ input{
 /*end meme game layout*/
 
 /*photo page layout*/
-.photo-grid-container {
+.photoGridContainer {
     display: flex;
     justify-content: center;
   }
   
-  .photo-grid {
+  .photoGrid {
     position: relative;
     top: 10px;
     width: 900px;
     display: flex;
-    justify-content: center;    /* Change this*/ 
+    justify-content: center;  
     flex-wrap: wrap;
   }  
   
-  .photo-grid-item {
+  .photoGridItem {
     border: 1px solid #fff;
     width: 400px;
     height: 400px;
