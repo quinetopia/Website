@@ -1,5 +1,4 @@
 window.onload = function(){
-    console.log("in window load");
     var submitButton = document.getElementById("memeForm");
 
     submitButton.addEventListener("submit", function (event){

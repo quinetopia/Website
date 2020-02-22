@@ -1,3 +1,4 @@
+/* Version 1.2 */
 Body {
     background: #ff7b0d;
     font-family: 'Muli', sans-serif;
@@ -185,9 +186,9 @@ input{
 .photoGridContainer {
     display: flex;
     justify-content: center;
-  }
+}
   
-  .photoGrid {
+.photoGrid {
     position: relative;
     top: 10px;
     width: 900px;
@@ -196,9 +197,68 @@ input{
     flex-wrap: wrap;
   }  
   
-  .photoGridItem {
+.photoGridItem {
     border: 1px solid #fff;
     width: 400px;
     height: 400px;
   }
   /*end photo layout*/
+
+  /*memory game layout*/
+  #memGameInstructions {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    min-width: 750px;
+    color : whitesmoke;
+    font-family: 'Revalia', cursive;
+    font-size: 14pt;
+  }
+  #memGameInstructionLayout{
+      float: left;
+      width: 15%;
+  }
+  #memGameLowScore {
+    text-align: center;
+    
+  }
+  #memGameStart {
+      text-align: center;
+  }
+  #memGameInstructionBlock {
+      float: left;
+      margin-left: 10px;
+      text-align: center;
+      width: 75%;
+  }
+  #memGameNextStep {
+      display: inline-block;
+      width: 100%;
+      height: 25px;
+      font-family: 'Revalia', cursive;
+      font-size: 14pt;
+      text-align: center;
+      color: rgb(13, 54, 92);
+  }
+  #memGameCardAreaframe{
+      display: flex;
+      width: 100%;
+      min-width: 750px;
+      justify-content: center;
+  }
+  #memGameCardArea {
+      width: 750px;
+      margin-top: 10px;
+  }
+ 
+  .memGameCardColums {
+      float: left;
+      text-align: center;
+      margin-top: 5px;
+      width: 25%;
+      Height: 150px;
+  }
+  .memGameCardRows{
+      margin-top: 5px;
+  }
