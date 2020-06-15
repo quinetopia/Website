@@ -10,31 +10,92 @@
     <title>Awe and wonder - HelelnQuine.com</title>
 </head>
 <body>
-    <header>
-        <div id="nav">
-            <a href="index.html">home</a> || 
-            <a href="mailto:hkquine@gmail.com">email me</a> || 
-            <a href="resume.html">resume</a> || 
-            <a href="games.html">games</a> || 
-            photos
+  <nav>
+    <div class="nav">
+      <a href="index.html">home </a>
+      <a href="contact.html">contact me</a>
+      <a href="resume.html">resume</a>
+      <a href="projects.html">projects</a>
+      <a class="active" href="#photos">photos</a>
+    </div>
+    <div class="breadcrumbs">
+    </div>
+  </nav>
+  <div class="photos">
+  <h1>Photos of The Sunset</h1>
+  <section class="carousel" aria-label="Gallery">
+    <ol class="carousel__viewport">
+      <li id="carousel__slide1"
+          tabindex="0"
+          class="carousel__slide">
+
+        <div class="carousel__snapper">
+          <img src='images/sunset_sunset.png' alt="Sunset in San Francisco's Sunset District"/>
         </div>
-        <div id="breadcrumbs">
+          <a href="#carousel__slide4"
+             class="carousel__prev">Go to last slide</a>
+          <a href="#carousel__slide2"
+             class="carousel__next">Go to next slide</a>
+
+      </li>
+      <li id="carousel__slide2"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper">
+          <img src='images/ocean_beach.png' alt="Ocean Beach in San Francisco's Sunset District"/>
         </div>
-    </header>
-    <main>
-        <div class='photoGridContainer'>
-            <div class='photoGrid'>
-              <div class='photoGridItem'>
-                <img src='images/one.gif' alt="San Francisco's Sunset District"/>
-              </div>
-              <div class='photoGridItem'>
-                <img src='images/two.gif' alt="The Pacific from San Francisco's Ocean Beach"/>
-              </div>
-              <div class='photoGridItem'>
-                <img src='images/three.gif' alt="San Francisco's Hidden Garden Steps"/>
-              </div>
-            </div>
-          </div>
-    </main>
+        <a href="#carousel__slide1"
+           class="carousel__prev">Go to previous slide</a>
+        <a href="#carousel__slide3"
+           class="carousel__next">Go to next slide</a>
+      </li>
+      <li id="carousel__slide3"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper">
+          <img src='images/hg_steps.png' alt="Hidden Garden Steps in San Francisco's Sunset District"/>
+        </div>
+        <a href="#carousel__slide2"
+           class="carousel__prev">Go to previous slide</a>
+        <a href="#carousel__slide4"
+           class="carousel__next">Go to next slide</a>
+      </li>
+      <li id="carousel__slide4"
+          tabindex="0"
+          class="carousel__slide">
+        <div class="carousel__snapper">
+          <img src='images/lake_merced.png' alt="Lake Merced near San Francisco's Sunset District"/>
+        </div>
+        <a href="#carousel__slide3"
+           class="carousel__prev">Go to previous slide</a>
+        <a href="#carousel__slide1"
+           class="carousel__next">Go to first slide</a>
+      </li>
+    </ol>
+    <aside class="carousel__navigation">
+      <ol class="carousel__navigation-list">
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide1"
+             class="carousel__navigation-button">Go to slide 1</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide2"
+             class="carousel__navigation-button">Go to slide 2</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide3"
+             class="carousel__navigation-button">Go to slide 3</a>
+        </li>
+        <li class="carousel__navigation-item">
+          <a href="#carousel__slide4"
+             class="carousel__navigation-button">Go to slide 4</a>
+        </li>
+      </ol>
+    </aside>
+  </section>
+  </div>
+  <footer class="footer">
+    ©Helen Quine 2020, credit to <a href="https://css-tricks.com/css-only-carousel/">Christian Schaefer</a> for the carousel.
+  </footer>
 </body>
 </html>

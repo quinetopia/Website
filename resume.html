@@ -6,40 +6,131 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resume - HelenQuine.com</title>
     <link href="https://fonts.googleapis.com/css?family=Muli:500|Playfair+Display:800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" href="HKQHome_style_v_1.2.css">
 </head>
 <body>
-    <header>
-        <div id="nav">
-            <a href="index.html">home</a> || 
-            <a href="mailto:hkquine@gmail.com">email me</a> || 
-            resume || 
-            <a href="games.html">games</a> || 
-            <a href="photos.html">photos</a>
+  <nav>
+    <div class="nav">
+      <a href="index.html">home </a>
+      <a href="contact.html">contact me</a>
+      <a class="active" href="#resume">resume</a>
+      <a href="projects.html">projects</a>
+      <a href="photos.html">photos</a>
+    </div>
+    <div class="breadcrumbs">
+    </div>
+  </nav>
+    <section class="resume">
+      <div class="resumebuttoncontainer">
+          <a href="images/helen_quine_resume.pdf" download>
+              <div class="button">
+              Download as a pdf
+              </div>
+          </a>
+      </div>
+      <div>
+        <div class="email"><i class="fas fa-at"></i> <a href="mailto:hkquine@gmail.com">hkquine@gmail.com</a></div>
+      </div>
+      <div id="experience">
+        <h1>Work Experience:</h1>
+        <div>
+          <table class="job-header">
+            <td class="job-header-title"><h3>Software Engineer Intern</h3></td><td class="job-header-date">05/2020 – 06/2020</td>
+          </table>
+          <span class="company-list">LiveStack, Inc. </span><span class="company-divider"> | </span><span class="company-list"> San Francisco, CA</span>
+          <div>
+            <ul>
+              <li>Developed scheduled routines integrating data from PostgreSQL database with external email and payment systems to
+                automate refunding customers as part of an Express/React app.</li>
+              <li>Created server automation for customer communication as part of product request flow.</li>
+              <li>Refactored server and client aspects of API use to hide unnecessary detail from the client to make it simpler to use.</li>
+              <li>Wrote unit and integrations tests for email, API and search functions.</li>
+            </ul>
+          </div>
+          <table class="job-header">
+            <td class="job-header-title"><h3>Associate Director Consulting Services</h3></td><td class="job-header-date">08/2001 – 05/2006</td>
+          </table>
+          <span class="company-list">TechSoup</span><span class="company-divider"> | </span><span class="company-list">San Francisco, CA</span>
+          <div>
+            <ul>
+              <li>Promoted from Senior Program Manager.</li>
+              <li>Managed and mentored a team of consultants providing technology services to nonprofits, guiding the team through organizational change.</li>
+              <li>Introduced and oversaw quality assurance methodology.</li>
+              <li>Directed service development including creating a program for small nonprofits to upgrade and manage their computer systems in a cost effective manner despite staff’s low technology skills.</li>
+              <li>Consulted with nonprofits to provide technology advice and assistance that matched mission objectives and funding availability.</li>
+            </ul>
+          </div>
+          <table class="job-header">
+            <td class="job-header-title"><h3>Information Systems Manager</h3></td><td class="job-header-date">04/1997 – 08/2001</td>
+          </table>
+          <span class="company-list">San Francisco Food Bank</span><span class="company-divider"> | </span><span class="company-list">San Francisco, CA</span>
+          <div>
+            <ul>
+              <li>Promoted from Programs Analyst and Information Systems Associate.</li>
+              <li>Doubled food distribution without increasing administrative staff by Implementing a systems upgrade converting the organization from an old accounting and stock control system to an enterprise management system.</li>
+              <li>Managed a network of ~50 machines and 5 servers. Installed and supported hardware and software, provided first line IT support, coordinated and assisted with efforts of specialist support and developed and managed the IT budget.</li>
+            </ul>
+          </div>
+          <table class="job-header">
+            <td class="job-header-title"><h3>Constable</h3></td><td class="job-header-date">04/1993 – 08/1996</td>
+          </table>
+          <span class="company-list">Bedfordshire Police</span><span class="company-divider"> | </span><span class="company-list">United Kingdom</span>
+          <div>
+            <ul>
+              <li>Beat Officer in Luton. Section Intelligence Officer. Secondment to Fraud Squad.</li>
+            </ul>
+          </div>
+          <table class="job-header">
+            <td class="job-header-title"><h3>Actuarial Assistant</h3></td><td class="job-header-date">10/1992 – 04/1993</td>
+          </table>
+          <span class="company-list">Windsor Life</span><span class="company-divider"> | </span><span class="company-list">United Kingdom</span>
+          <div>
+            <ul>
+              <li>Developed a computer based testing system in C to meet regulatory training requirements for sales associates.</li>
+              <li>Calculated insurance claims in accordance with plan rules and government regulation.</li>
+            </ul>
+          </div>
+          <table class="job-header">
+            <td class="job-header-title"><h3>Computer Programmer</h3></td><td class="job-header-date">08/1989 – 08/1991</td>
+          </table>
+          <span class="company-list">Leckhampton Computers</span><span class="company-divider"> | </span><span class="company-list">United Kingdom</span>
+          <div>
+            <ul>
+              <li>Ported custom database management system into C on the Unix platform.</li>
+              <li>Provided maintenance and adaptations to systems meet client requirements.</li>
+            </ul>
+          </div>
+          <table class="job-header">
+            <td class="job-header-title"><h3>Systems Administrator</h3></td><td class="job-header-date">09/1988 – 08/1989</td>
+          </table>
+          <span class="company-list">Andrew Page, Ltd.</span><span class="company-divider"> | </span><span class="company-list">United Kingdom</span>
+          <div>
+            <ul>
+              <li>Promoted from Assistant Systems Administrator.</li>
+              <li>Maintained system up time and IT support for head office and three satellite offices.</li>
+            </ul>
+          </div>
         </div>
-        <div id="breadcrumbs">
-        </div>
-    </header>
-    <main>
-        <div class="resumebuttoncontainer">
-            <a href="images/helen_quine_resume.pdf" download>
-                <section class="button">
-                Download as a pdf
-                </section>
-            </a>
-        </div>
-        <section id="education">
-            <h1>Education:</h1>
-            <div>BA Politics Philosophy and Economics, The Open University, UK</div>
-            <div>BSc Computer Science and Mathematics, University of Leeds, UK</div>
-        </section>
-        <section id="skills">
-            <h1>Skills:</h1>
-            <div>Javascript</div>
-        </section>
-        <section id="experience">
-            <h1>Experience:</h1>
-        </section>
-    </main>
+    </div>
+      <div id="education">
+          <h1>Education:</h1>
+          <ul>
+            <li>Rithm School, San Francisco, CA</br>A 16 week full stack web development bootcamp. JavaScript, Python, SQL, React, Node.js, Flask, etc.</br>
+              Final project Jobly, a job postings site: <a href= https://github.com/quinetopia/Jobly-frontend>https://github.com/quinetopia/Jobly-frontend</a></li>
+            <li>BA Politics Philosophy and Economics, The Open University, UK</li>
+            <li>BSc Computer Science and Mathematics, University of Leeds, UK</li>
+          </ul>
+      </div>
+      <div id="skills">
+          <h1>Skills:</h1>
+          <div><b>Languages  - </b> Javascript | Python | SQL | HTML | CSS</div>
+          <div><b>Libraries / Frameworks / Tools  - </b>  React | Redux | Node | Express | Jest | Flask | SQLAlchemy | PostgreSQL | VSCode | Git | Github</div>
+      </div>
+    </br>
+    </section>
+    <footer class="footer">
+      ©Helen Quine 2020
+    </footer>
 </body>
 </html>
